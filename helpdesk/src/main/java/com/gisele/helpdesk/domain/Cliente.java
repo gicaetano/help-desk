@@ -1,6 +1,3 @@
-/**
- * 
- */
 package com.gisele.helpdesk.domain;
 
 import java.util.ArrayList;
@@ -8,11 +5,6 @@ import java.util.List;
 
 import lombok.Getter;
 import lombok.Setter;
-
-/**
- * @author giseleCaetano
- * @since 05/22 Classe responsável pelo cadastro de clientes
- */
 
 @Getter
 @Setter

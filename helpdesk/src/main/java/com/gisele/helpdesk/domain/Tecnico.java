@@ -6,12 +6,6 @@ import java.util.List;
 import lombok.Getter;
 import lombok.Setter;
 
-/**
- * @author giseleCaetano
- * @since 05/22
- * Classe responsável pelo cadastro de técnico
- */
-
 @Getter
 @Setter
 public class Tecnico extends Pessoa {

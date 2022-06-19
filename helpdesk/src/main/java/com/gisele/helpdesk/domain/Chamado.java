@@ -1,6 +1,3 @@
-/**
- * 
- */
 package com.gisele.helpdesk.domain;
 
 import java.time.LocalDate;
@@ -10,12 +7,6 @@ import com.gisele.helpdesk.domain.enums.Status;
 
 import lombok.Data;
 
-/**
- * @author giseleCaetano
- * @since 05/22
- * Classe responsável pelo gerenciamento de chamados
- *
- */
 
 @Data
 public class Chamado {

@@ -8,13 +8,6 @@ import com.gisele.helpdesk.domain.enums.Perfil;
 
 import lombok.Data;
 
-/**
- * @author giseleCaetano
- * @since 05/22 
- * Classe responsável pelo cadastro de pessoas
- *
- */
-
 @Data
 public abstract class Pessoa {
 
