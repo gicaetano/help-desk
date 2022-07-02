@@ -18,8 +18,8 @@ public enum Prioridade {
 	private String descrição;
 	
 	private Prioridade(Integer codigo, String descrição) {
-		this.codigo = codigo;
-		this.descrição = descrição;
+		this.setCodigo(codigo);
+		this.setDescrição(descrição);
 	}
 
 	/**
@@ -39,5 +39,21 @@ public enum Prioridade {
 			}
 		}
 		throw new IllegalArgumentException("sTATUS Inválido");
+	}
+
+	public Integer getCodigo() {
+		return codigo;
+	}
+
+	public void setCodigo(Integer codigo) {
+		this.codigo = codigo;
+	}
+
+	public String getDescrição() {
+		return descrição;
+	}
+
+	public void setDescrição(String descrição) {
+		this.descrição = descrição;
 	}
 }

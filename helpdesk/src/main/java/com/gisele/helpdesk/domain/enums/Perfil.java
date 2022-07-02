@@ -17,8 +17,8 @@ public enum Perfil {
 	private String descrição;
 	
 	private Perfil(Integer codigo, String descrição) {
-		this.codigo = codigo;
-		this.descrição = descrição;
+		this.setCodigo(codigo);
+		this.setDescrição(descrição);
 	}
 
 	/**
@@ -38,5 +38,21 @@ public enum Perfil {
 			}
 		}
 		throw new IllegalArgumentException("Perfil Inválido");
+	}
+
+	public Integer getCodigo() {
+		return codigo;
+	}
+
+	public void setCodigo(Integer codigo) {
+		this.codigo = codigo;
+	}
+
+	public String getDescrição() {
+		return descrição;
+	}
+
+	public void setDescrição(String descrição) {
+		this.descrição = descrição;
 	}
 }
