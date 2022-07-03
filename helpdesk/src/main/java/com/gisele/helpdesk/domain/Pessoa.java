@@ -67,7 +67,7 @@ public abstract class Pessoa implements Serializable {
 	 * @param perfil
 	 */
 	
-	protected void addPerfil(Perfil perfil) {
+	public void addPerfil(Perfil perfil) {
 		this.perfis.add(perfil.getCodigo());
 	}
 }
