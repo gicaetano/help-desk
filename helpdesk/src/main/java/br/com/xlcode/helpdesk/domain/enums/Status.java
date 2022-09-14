@@ -1,23 +1,23 @@
-package com.gisele.helpdesk.domain.enums;
+package br.com.xlcode.helpdesk.domain.enums;
 
 import lombok.Getter;
 
 /**
  * @author giseleCaetano
  * @since 05/22 
- * DEFINIÇÃO DA PRIORIDADE DO CHAMADO
+ * DEFINIÇÃO DO STATUS DO CHAMADO
  *        
  */
 
 @Getter
-public enum Prioridade {
+public enum Status {
 
-	BAIXA(0, "BAIXA"), MEDIA(1, "MEDIA"), ALTA(2, "ALTA");
+	ABERTO(0, "ABERTO"), ANDAMENTO(1, "ANDAMENTO"), ENCERRADO(2, "ENCERRADO");
 
 	private Integer codigo;
 	private String descrição;
 	
-	private Prioridade(Integer codigo, String descrição) {
+	private Status(Integer codigo, String descrição) {
 		this.setCodigo(codigo);
 		this.setDescrição(descrição);
 	}
@@ -25,15 +25,15 @@ public enum Prioridade {
 	/**
 	 * 
 	 * MÉTODO
-	 * Responsável por verificar se o PRIORIDADE recebido é válido
+	 * Responsável por verificar se o STATUS recebido é válido
 	 * 
 	 */
 	
-	public static Prioridade toEnum(Integer cod) {
+	public static Status toEnum(Integer cod) {
 		if(cod == null) {
 			return null;
 		}
-		for(Prioridade x : Prioridade.values()) {
+		for(Status x : Status.values()) {
 			if(cod.equals(x.getCodigo())) {
 				return x;
 			}

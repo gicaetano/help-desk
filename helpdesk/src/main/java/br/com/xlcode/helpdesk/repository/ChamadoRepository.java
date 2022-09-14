@@ -1,8 +1,8 @@
-package com.gisele.helpdesk.repository;
+package br.com.xlcode.helpdesk.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.gisele.helpdesk.domain.Chamado;
+import br.com.xlcode.helpdesk.domain.Chamado;
 
 public interface ChamadoRepository extends JpaRepository<Chamado, Integer> {
 

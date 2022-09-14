@@ -1,4 +1,4 @@
-package com.gisele.helpdesk.domain;
+package br.com.xlcode.helpdesk.domain;
 
 import java.io.Serializable;
 import java.time.LocalDate;
@@ -15,8 +15,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-import com.gisele.helpdesk.domain.enums.Perfil;
 
+import br.com.xlcode.helpdesk.domain.enums.Perfil;
 import lombok.Data;
 
 @Data

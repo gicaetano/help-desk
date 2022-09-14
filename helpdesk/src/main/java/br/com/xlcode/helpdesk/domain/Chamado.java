@@ -1,4 +1,4 @@
-package com.gisele.helpdesk.domain;
+package br.com.xlcode.helpdesk.domain;
 
 import java.io.Serializable;
 import java.time.LocalDate;
@@ -11,9 +11,9 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-import com.gisele.helpdesk.domain.enums.Prioridade;
-import com.gisele.helpdesk.domain.enums.Status;
 
+import br.com.xlcode.helpdesk.domain.enums.Prioridade;
+import br.com.xlcode.helpdesk.domain.enums.Status;
 import lombok.Data;
 
 @Data

@@ -1,19 +1,19 @@
-package com.gisele.helpdesk.services;
+package br.com.xlcode.helpdesk.services;
 
 import java.util.Arrays;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.gisele.helpdesk.domain.Chamado;
-import com.gisele.helpdesk.domain.Cliente;
-import com.gisele.helpdesk.domain.Tecnico;
-import com.gisele.helpdesk.domain.enums.Perfil;
-import com.gisele.helpdesk.domain.enums.Prioridade;
-import com.gisele.helpdesk.domain.enums.Status;
-import com.gisele.helpdesk.repository.ChamadoRepository;
-import com.gisele.helpdesk.repository.ClienteRepository;
-import com.gisele.helpdesk.repository.TecnicoRepository;
+import br.com.xlcode.helpdesk.domain.Chamado;
+import br.com.xlcode.helpdesk.domain.Cliente;
+import br.com.xlcode.helpdesk.domain.Tecnico;
+import br.com.xlcode.helpdesk.domain.enums.Perfil;
+import br.com.xlcode.helpdesk.domain.enums.Prioridade;
+import br.com.xlcode.helpdesk.domain.enums.Status;
+import br.com.xlcode.helpdesk.repository.ChamadoRepository;
+import br.com.xlcode.helpdesk.repository.ClienteRepository;
+import br.com.xlcode.helpdesk.repository.TecnicoRepository;
 
 @Service
 public class DBService {

@@ -1,22 +1,23 @@
-package com.gisele.helpdesk.domain.enums;
+package br.com.xlcode.helpdesk.domain.enums;
 
 import lombok.Getter;
 
 /**
  * @author giseleCaetano
  * @since 05/22 
- * DEFINIÇÃO DO PERFIL QUE ESTA ACESSANDO O SISTEMA
+ * DEFINIÇÃO DA PRIORIDADE DO CHAMADO
+ *        
  */
 
 @Getter
-public enum Perfil {
+public enum Prioridade {
 
-	ADMIN(0, "ROLE_ADMIN"), CLIENTE(1, "ROLE_CLIENTE"), TECNICO(2, "ROLE_TECNICO");
+	BAIXA(0, "BAIXA"), MEDIA(1, "MEDIA"), ALTA(2, "ALTA");
 
 	private Integer codigo;
 	private String descrição;
 	
-	private Perfil(Integer codigo, String descrição) {
+	private Prioridade(Integer codigo, String descrição) {
 		this.setCodigo(codigo);
 		this.setDescrição(descrição);
 	}
@@ -24,20 +25,20 @@ public enum Perfil {
 	/**
 	 * 
 	 * MÉTODO
-	 * Responsável por verificar se o código recebido é válido
+	 * Responsável por verificar se o PRIORIDADE recebido é válido
 	 * 
 	 */
 	
-	public static Perfil toEnum(Integer cod) {
+	public static Prioridade toEnum(Integer cod) {
 		if(cod == null) {
 			return null;
 		}
-		for(Perfil x : Perfil.values()) {
+		for(Prioridade x : Prioridade.values()) {
 			if(cod.equals(x.getCodigo())) {
 				return x;
 			}
 		}
-		throw new IllegalArgumentException("Perfil Inválido");
+		throw new IllegalArgumentException("sTATUS Inválido");
 	}
 
 	public Integer getCodigo() {

@@ -1,4 +1,4 @@
-package com.gisele.helpdesk.resources;
+package br.com.xlcode.helpdesk.resources;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.gisele.helpdesk.domain.Tecnico;
-import com.gisele.helpdesk.services.TecnicoService;
+import br.com.xlcode.helpdesk.domain.Tecnico;
+import br.com.xlcode.helpdesk.services.TecnicoService;
 
 @RestController
 @RequestMapping(value = "/tecnicos")

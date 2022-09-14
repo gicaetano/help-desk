@@ -1,4 +1,4 @@
-package com.gisele.helpdesk.domain;
+package br.com.xlcode.helpdesk.domain;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,8 +7,8 @@ import javax.persistence.Entity;
 import javax.persistence.OneToMany;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.gisele.helpdesk.domain.enums.Perfil;
 
+import br.com.xlcode.helpdesk.domain.enums.Perfil;
 import lombok.Getter;
 import lombok.Setter;
 

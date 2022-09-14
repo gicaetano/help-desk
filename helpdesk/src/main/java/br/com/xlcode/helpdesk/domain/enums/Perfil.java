@@ -1,23 +1,22 @@
-package com.gisele.helpdesk.domain.enums;
+package br.com.xlcode.helpdesk.domain.enums;
 
 import lombok.Getter;
 
 /**
  * @author giseleCaetano
  * @since 05/22 
- * DEFINIÇÃO DO STATUS DO CHAMADO
- *        
+ * DEFINIÇÃO DO PERFIL QUE ESTA ACESSANDO O SISTEMA
  */
 
 @Getter
-public enum Status {
+public enum Perfil {
 
-	ABERTO(0, "ABERTO"), ANDAMENTO(1, "ANDAMENTO"), ENCERRADO(2, "ENCERRADO");
+	ADMIN(0, "ROLE_ADMIN"), CLIENTE(1, "ROLE_CLIENTE"), TECNICO(2, "ROLE_TECNICO");
 
 	private Integer codigo;
 	private String descrição;
 	
-	private Status(Integer codigo, String descrição) {
+	private Perfil(Integer codigo, String descrição) {
 		this.setCodigo(codigo);
 		this.setDescrição(descrição);
 	}
@@ -25,20 +24,20 @@ public enum Status {
 	/**
 	 * 
 	 * MÉTODO
-	 * Responsável por verificar se o STATUS recebido é válido
+	 * Responsável por verificar se o código recebido é válido
 	 * 
 	 */
 	
-	public static Status toEnum(Integer cod) {
+	public static Perfil toEnum(Integer cod) {
 		if(cod == null) {
 			return null;
 		}
-		for(Status x : Status.values()) {
+		for(Perfil x : Perfil.values()) {
 			if(cod.equals(x.getCodigo())) {
 				return x;
 			}
 		}
-		throw new IllegalArgumentException("sTATUS Inválido");
+		throw new IllegalArgumentException("Perfil Inválido");
 	}
 
 	public Integer getCodigo() {
